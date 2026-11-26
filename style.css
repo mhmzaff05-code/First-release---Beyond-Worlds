@@ -1,0 +1,129 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #050816;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+/* تحكم الشخصية */
+#controls {
+  position: fixed;
+  z-index: 10;
+  bottom: 25px;
+  left: 85px;
+  display: flex;
+  gap: 10px;
+}
+
+#controls button,
+#xw button,
+.ee button {
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  color: white;
+  background: #1e293b;
+  border: 1px solid #38bdf8;
+  border-radius: 12px;
+}
+
+/* تحكم المركبة */
+.ee {
+  position: fixed;
+  z-index: 10;
+  bottom: 25px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* منع تحديد الأزرار أثناء اللمس */
+button {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: none;
+}
+
+/* الأزرار الرئيسية */
+#land,
+#rn, 
+#ffn,
+#evk,
+#ksz {
+  position: fixed;
+  z-index: 20;
+  color: white;
+  background: #0284C7;
+  font-size: 16px;
+  padding: 11px 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* زر الهبوط */
+#land {
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+
+/* زر النزول من المركبة */
+#ffn {
+  top: 75px;
+  right: 20px;
+  display: none;
+}
+
+/* زر التحليق */
+#evk {
+  top: 20px;
+  left: 20px;
+  display: none;
+}
+
+/* زر ركوب المركبة */
+#ksz {
+  top: 75px;
+  left: 20px;
+  display: none;
+}
+
+/* تحكم اللاعب */
+#xw {
+  position: fixed;
+  bottom: 25px;
+  left: 85px;
+  display: none;
+  gap: 10px;
+  z-index: 10;
+}
+#rn{
+    position: fixed;
+  top: 20px;
+  right: 20px;
+  display: none;
+  z-index: 10;
+}
+#up {
+  position: fixed;
+  right: 20px;
+  bottom: 25px;
+}
